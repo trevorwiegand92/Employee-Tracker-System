@@ -18,8 +18,7 @@ Technologies used:
 
 Github URL:
 
-https://github.com/trevorwiegand92/Take-Some-Notes
-
+https://github.com/trevorwiegand92/Employee-Tracker-System
 
 Video URL:
 
