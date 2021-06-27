@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/trevorwiegand92/Employee-Tracker-System/issues"
   },
-  "homepage": "https://github.com/trevorwiegand92/Employee-Tracker-System#readme"
+  "homepage": "https://github.com/trevorwiegand92/Employee-Tracker-System#readme",
+  "dependencies": {
+    "console-table": "^0.1.2",
+    "inquirer": "^8.1.1",
+    "mysql": "^2.18.1"
+  }
 }
