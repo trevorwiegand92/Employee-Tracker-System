@@ -23,3 +23,12 @@ https://github.com/trevorwiegand92/Employee-Tracker-System
 Video URL:
 
 
+Screenshots:
+
+![Here's a screenshot of the finished index page.](./images/initial_npm_start_screenshot.png)
+
+![Here's a screenshot of the finished index page.](./images/view_all_employees_table_screenshot.png)
+
+![Here's a screenshot of the finished index page.](./images/roles_and_departments_screenshot.png)
+
+

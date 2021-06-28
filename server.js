@@ -12,11 +12,12 @@ const connection = mysql.createConnection({
     database: 'employees_systemDB',
 });
 
-
+//arrays used for filling information throughout the application.//
 let departmentInfo = [];
 let roleInfo = [];
 let employeeInfo = [];
 
+//this function begins the initial prompt and contains the functions to display and update information.//
 const beginPrompts = () => {
     loadDepartments();
     loadRoles();
@@ -39,6 +40,7 @@ const beginPrompts = () => {
                 ],
             },
         ])
+        //goes to the selected function.//
         .then((answer) => {
             if (answer.option === "View all employees") {
                 showEmployees();
@@ -70,6 +72,7 @@ const beginPrompts = () => {
         });
 };
 
+
 const loadDepartments = () => {
     departmentInfo = []
     connection.query("SELECT * FROM department", (err, res) => {
@@ -99,7 +102,7 @@ const loadAllEmployees = () => {
         });
     })
 };
-
+//this function displays all the employees in the database.//
 const showEmployees = () => {
     let queryString = `SELECT employee.id, first_name, last_name, title, salary, name AS department_name FROM employee
                        LEFT JOIN role ON role_id = role.id
