@@ -8,11 +8,11 @@ The application will allow a user to interact with the command-line and add depa
 
 
 Technologies used: 
-    * Javascript
-    * Node
-    * Inquirer
-    * My SQL
-    * My SQL Workbench
+    - Javascript
+    - Node
+    - Inquirer
+    - My SQL
+    - My SQL Workbench
 
 
 
