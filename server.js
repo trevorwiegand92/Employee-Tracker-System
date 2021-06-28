@@ -72,7 +72,7 @@ const beginPrompts = () => {
         });
 };
 
-
+//this function connects to the departments table in the database.//
 const loadDepartments = () => {
     departmentInfo = []
     connection.query("SELECT * FROM department", (err, res) => {
@@ -83,6 +83,7 @@ const loadDepartments = () => {
     })
 };
 
+//this function connects to the roles table in the database.//
 const loadRoles = () => {
     roleInfo = []
     connection.query("SELECT * FROM role", (err, res) => {
@@ -93,6 +94,7 @@ const loadRoles = () => {
     })
 };
 
+//this function connects to the employees table in the database.//
 const loadAllEmployees = () => {
     employeeInfo = []
     connection.query("SELECT * FROM employee", (err, res) => {
@@ -102,6 +104,7 @@ const loadAllEmployees = () => {
         });
     })
 };
+
 //this function displays all the employees in the database.//
 const showEmployees = () => {
     let queryString = `SELECT employee.id, first_name, last_name, title, salary, name AS department_name FROM employee
@@ -115,6 +118,7 @@ const showEmployees = () => {
 
 };
 
+// this function allows the user to view employees by their departments.//
 const viewByDepartment = () => {
     inquirer.prompt([
             {
@@ -138,6 +142,7 @@ const viewByDepartment = () => {
         })
 }
 
+// this function lets the user add new employees.//
 const addEmployee = () => {
     inquirer.prompt([
             {
@@ -171,6 +176,7 @@ const addEmployee = () => {
         })
 };
 
+// this function allows the user to update a current employee's role.//
 const updateEmployeeRole = () => {
     inquirer.prompt([
             {
@@ -199,6 +205,7 @@ const updateEmployeeRole = () => {
         });
 };
 
+//this function displays what roles are currently in the database.
 const showRoles = () => {
     connection.query("SELECT * FROM role", (err, res) => {
         if (err) throw err;
@@ -209,6 +216,7 @@ const showRoles = () => {
 
 };
 
+//this function lets the user add a new role.//
 const addRole = () => {
     inquirer.prompt([
             {
@@ -241,6 +249,7 @@ const addRole = () => {
         });
 };
 
+//shows all the apartments within the database.//
 const showDepartments = () => {
     connection.query("SELECT * FROM department", (err, res) => {
         if (err) throw err;
@@ -250,6 +259,7 @@ const showDepartments = () => {
 
 };
 
+//allows the user to add a department to the database.//
 const addDepartment = () => {
     inquirer.prompt([
             {
@@ -274,6 +284,7 @@ const addDepartment = () => {
         });
 };
 
+//this function will exit out of the application.//
 const quit = () => {
     connection.end();
 }
