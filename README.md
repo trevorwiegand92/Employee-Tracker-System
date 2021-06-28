@@ -20,7 +20,10 @@ Github URL:
 
 https://github.com/trevorwiegand92/Employee-Tracker-System
 
+
 Video URL:
+
+https://drive.google.com/file/d/1uoell8lN5foEfo13oGERM3IFnErZQx-l/view
 
 
 Screenshots:
